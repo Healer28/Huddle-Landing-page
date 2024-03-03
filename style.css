@@ -30,8 +30,9 @@ header {
   opacity: 0.6;
 }
 #logo {
-  height: 70%;
-  width: 95%;
+  height: 50%;
+  width: fit-content;
+  object-fit: contain;
 }
 .firstcontainer {
   display: flex;
@@ -241,7 +242,7 @@ footer {
   font-size: 12px;
 }
 
-@media only screen and (width <= 700px) {
+@media only screen and (width <= 1500px) {
   .first {
     margin: 0;
     padding: 0;
@@ -253,6 +254,9 @@ footer {
     padding: 3em 2em 2em 2em;
     display: flex;
     justify-content: space-between;
+  }
+  #logo {
+    width: fit-content;
   }
   #tryit {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -363,7 +367,7 @@ footer {
     width: 100%;
     position: absolute;
     z-index: 1;
-    top: 235em;
+    top: 625vh;
   }
   .thirdcontent {
     height: 18em;
@@ -415,6 +419,7 @@ footer {
   }
   .lastcontainer {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: start;
     gap: 0em;
@@ -470,5 +475,242 @@ footer {
     text-align: center;
     width: 100%;
     font-size: 18px;
+  }
+}
+@media only screen and (width <= 450px) {
+  .first {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+  }
+  header {
+    padding: 3em 1.2em 1em 1.2em;
+    display: flex;
+    justify-content: space-around;
+  }
+  #logo {
+    height: 40%;
+    width: 40%;
+    object-fit: contain;
+  }
+  #tryit {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    align-self: center;
+    border-radius: 10em;
+    background-color: white;
+    padding: 0.6em 4em 0.6em 4em;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+  .firstcontainer {
+    padding: 3em;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .firstimage {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .firstcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em 0em 3em 0em;
+    row-gap: 1em;
+    text-align: center;
+  }
+  .heading1 {
+    font-size: 1.5em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+  .para1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+    margin-bottom: 1em;
+  }
+  .button1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 12px;
+    font-weight: 600;
+    font-variation-settings: "wdth" 100;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    width: fit-content;
+    padding: 1.3em 6em 1.3em 6em;
+    border-radius: 10em;
+  }
+  .second {
+    padding: 5em 3em 10em 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .box {
+    height: 20em;
+    padding: 2em 3em 2em 3em;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1em;
+    background-color: white;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 1.5em;
+  }
+  #box2 {
+    flex-direction: column-reverse;
+  }
+  .image2 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .secondcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5em;
+  }
+  .heading2 {
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+  }
+  .para2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8em;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+    color: hsl(208, 11%, 55%);
+  }
+  .third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 136em;
+  }
+  .thirdcontent {
+    height: 10em;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 1.5em;
+    row-gap: 2em;
+    background-color: white;
+  }
+  .heading3 {
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+  .button3 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-variation-settings: "wdth" 100;
+    font-size: 0.8em;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    width: fit-content;
+    padding: 1.2em 5em 1.2em 5em;
+    border-radius: 100em;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  footer {
+    padding: 2em;
+    padding-top: 10em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+    color: hsl(193, 100%, 96%);
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .image3 {
+    filter: brightness(0) invert(1);
+  }
+  .lastcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0em;
+  }
+  .column1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+    margin-top: 1em;
+    margin-bottom: 5em;
+  }
+
+  .column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  .column3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-bottom: 5em;
+  }
+  .contactlist1 {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 1em;
+  }
+  .contactlist2 {
+    font-size: 1em;
+  }
+  .contactlist3 {
+    font-size: 1em;
+  }
+  .social {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .icon {
+    padding: 0.4em 1em 0 0;
+  }
+  .icon2 {
+    filter: invert(1);
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
   }
 }
